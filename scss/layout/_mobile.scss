@@ -1,0 +1,18 @@
+@media screen and (max-width: 845px) {
+  .main {
+    gap: 2rem;
+    border-radius: 0;
+    flex-direction: column-reverse;
+
+    &-section {
+      padding: 1rem;
+    }
+
+    &-side {
+      .image {
+        width: 100%;
+        content: url("../../assets/images/illustration-sign-up-mobile.svg");
+      }
+    }
+  }
+}
