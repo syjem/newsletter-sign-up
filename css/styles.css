@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+ul {
+  list-style-image: url("../../assets/images/icon-list.svg");
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active,
+button:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 4.8vw, 2.8rem);
+}
+
+p {
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --max-width: 90rem;
+  --min-width: 20rem;
+  --clr-tomato: hsl(4, 100%, 67%);
+  --clr-dark-gray: hsl(234, 29%, 20%);
+  --clr-charcoal-grey: hsl(235, 18%, 26%);
+  --clr-grey: hsl(231, 7%, 60%);
+  --clr-white: hsl(0, 0%, 100%);
+  --ff-bold: "Roboto-Bold", sans-serif;
+  --ff-reg: "Roboto-Regular", sans-serif;
+  --fw-bold: 700;
+  --fw-reg: 400;
+}
