@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/syjem/newsletter-sign-up](https://github.com/syjem/newsletter-sign-up)
-- Live Site URL: [https://syjem.github.io/newsletter-sign-up/](https://syjem.github.io/newsletter-sign-up/)
+- Live Site URL: [https://newsletter-sign-up-syjem.vercel.app/](https://newsletter-sign-up-syjem.vercel.app/)
 
 ## My process
 ### Built with
