@@ -15,6 +15,9 @@ body {
   padding: 0;
   font-family: "Roboto-Bold", sans-serif;
   background-color: var(--clr-dark-gray);
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 h1,
