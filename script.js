@@ -15,9 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (emailValue === "" || !checkEmail(emailValue)) {
       error.textContent = "* Valid email is required!";
-      email.style.backgroundColor = "hsla(4, 100%, 67%, 0.2)";
-      email.style.borderColor = "var(--clr-tomato)";
-      email.style.color = "var(--clr-tomato)";
+      setErrorStyle(email);
     } else {
       main.style.display = "none";
       submittedEmail.textContent = emailValue;
@@ -25,21 +23,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
       email.value = "";
 
-      error.textContent = "";
-      email.style.backgroundColor = "var(--clr-white)";
-      email.style.borderColor = "var(--clr-grey)";
-      email.style.color = "var(--clr-dark-gray)";
-
+      emailInitialStyle(email);
     }
+  });
 
-    dismissBtn.addEventListener("click", () => {
-      main.style.display = "flex";
-      successModal.style.display = "none";
-    });
+  dismissBtn.addEventListener("click", () => {
+    main.style.display = "flex";
+    successModal.style.display = "none";
+  });
+
+  email.addEventListener("input", () => {
+    emailInitialStyle(email);
   });
 
   const checkEmail = (email) => {
     const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regEx.test(email);
+  };
+
+  const emailInitialStyle = (email) => {
+    email.style.backgroundColor = "var(--clr-white)";
+    email.style.borderColor = "var(--clr-grey)";
+    email.style.color = "var(--clr-dark-gray)";
+
+    error.textContent = "";
+  };
+
+  const setErrorStyle = (email) => {
+    email.style.backgroundColor = "hsla(4, 100%, 67%, 0.2)";
+    email.style.borderColor = "var(--clr-tomato)";
+    email.style.color = "var(--clr-tomato)";
   };
 });
