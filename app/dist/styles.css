@@ -227,7 +227,7 @@ button:focus {
   }
   .main-side .image {
     width: 100%;
-    content: url("../../assets/images/illustration-sign-up-mobile.svg");
+    content: url("../../app/assets/images/illustration-sign-up-mobile.svg");
   }
   .success-modal {
     min-width: 20rem;
