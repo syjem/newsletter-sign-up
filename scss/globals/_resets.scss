@@ -13,11 +13,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto-Bold", sans-serif;
-  background-color: var(--clr-dark-gray);
   height: 100vh;
   display: grid;
   place-content: center;
+  font-family: var(--ff-bold);
+  background-color: var(--clr-dark-gray);
 }
 
 h1,

@@ -103,7 +103,7 @@
   display: none;
   padding: 5rem;
   margin-top: 3rem;
-  max-width: 590px;
+  max-width: min(100%, 590px);
   border-radius: 30px;
   flex-direction: column;
   background-color: var(--clr-white);

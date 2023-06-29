@@ -6,6 +6,7 @@
 
     &-section {
       padding: 1rem;
+      max-width: 100%;
     }
 
     &-side {
@@ -17,7 +18,9 @@
   }
 
   .success-modal {
+    min-width: 20rem;
     height: 80vh;
+    border-radius: 5px;
     padding: 5rem 2rem 3rem 2rem;
     justify-content: space-between;
   }
