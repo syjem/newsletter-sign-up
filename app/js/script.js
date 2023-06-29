@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const emailInitialStyle = (email) => {
       email.style.backgroundColor = "var(--clr-white)";
-      email.style.borderColor = "var(--clr-grey)";
+      email.style.borderColor = "var(--clr-charcoal-grey)";
       email.style.color = "var(--clr-dark-gray)";
   
       error.textContent = "";

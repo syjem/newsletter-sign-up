@@ -1,0 +1,23 @@
+$breakpoints-up: (
+  "small": 43.7485em,
+  "medium": 52.811em,
+  "large": 89.99875em,
+);
+
+$breakpoints-down: (
+  "medium": 43.75em,
+  "large": 52.813em,
+  "x-large": 90em,
+);
+
+@mixin breakpoint-mobile($size) {
+  @media screen and (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-desktop($size) {
+  @media screen and (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}

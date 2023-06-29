@@ -27,9 +27,9 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
-- Mobile view: ![](/assets/images/screenshot_mobile.png)
-- Desktop view: ![](/assets/images/screenshot_desktop.png)
+ss
+- Mobile view: ![](/app/assets/images/screenshot_mobile.png)
+- Desktop view: ![](/app/assets/images/screenshot_desktop.png)
 
 ### Links
 
