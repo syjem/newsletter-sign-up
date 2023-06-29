@@ -108,24 +108,30 @@
   flex-direction: column;
   background-color: var(--clr-white);
 
-  .success-image {
-    width: 50px !important;
-  }
+  .success-modal-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
-  .success-header {
-    color: var(--clr-dark-gray);
-  }
+    .success-image {
+      width: 50px;
+    }
 
-  .success-p {
-    line-height: 1.5;
-    font-family: var(--ff-reg);
+    .success-header {
+      color: var(--clr-dark-gray);
+    }
+
+    .success-p {
+      line-height: 1.5;
+      font-family: var(--ff-reg);
+    }
   }
 
   .success-dismiss-btn {
     border: none;
     padding: 1rem;
-    font-size: 1rem;
     cursor: pointer;
+    font-size: 1rem;
     border-radius: 0.5rem;
     color: var(--clr-white);
     font-family: var(--ff-bold);
